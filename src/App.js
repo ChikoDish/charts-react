@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { Chart, LineAdvance } from "bizcharts";
+import { data } from "./data";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Chart padding={[10, 20, 50, 40]} autoFit height={300} data={data}>
+        <LineAdvance
+          shape="smooth"
+          point
+          area
+          position="month*temperature"
+          color="city"
+        />
+      </Chart>
     </div>
   );
 }
