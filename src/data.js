@@ -6,12 +6,22 @@ export const data = [
   },
   {
     month: "Jan",
+    city: "Jaipur",
+    temperature: 17,
+  },
+  {
+    month: "Jan",
     city: "London",
     temperature: 3.9,
   },
   {
     month: "Feb",
     city: "Tokyo",
+    temperature: 13,
+  },
+  {
+    month: "Feb",
+    city: "Jaipur",
     temperature: 13,
   },
   {
@@ -23,6 +33,11 @@ export const data = [
     month: "Mar",
     city: "Tokyo",
     temperature: 16.5,
+  },
+  {
+    month: "Mar",
+    city: "Jaipur",
+    temperature: 1.5,
   },
   {
     month: "Mar",
